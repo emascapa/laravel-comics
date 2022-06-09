@@ -1,5 +1,5 @@
 <header>
-    <div class="container d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
         <div class="logo">
             <img src="{{ asset('img/dc-logo.png') }}" alt="logo">
         </div>

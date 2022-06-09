@@ -10240,11 +10240,9 @@ textarea.form-control-lg {
 }
 header {
   background-color: #FFFFFF;
-  padding: 0 1rem;
   height: 80px;
 }
 header .container {
-  justify-content: space-between;
   height: 100%;
 }
 header .container .logo {
@@ -10257,6 +10255,7 @@ header .container .logo img {
 header .container ul {
   list-style: none;
   height: 100%;
+  margin-bottom: 0;
 }
 header .container ul li {
   height: 100%;
