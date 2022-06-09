@@ -1,1 +1,135 @@
 //
+
+@use 'bootstrap';
+
+$primary_theme: #0C7CEC;
+$bg_dark: #1C1C1C;
+$text_dark: #464646;
+$secondary_font: #797979;
+$light_theme: #FFFFFF;
+$secondary_theme: #303030;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+$custom_font: 'Open Sans', sans-serif;
+
+header {
+    background-color: $light_theme;
+    padding: 0 1rem;
+    height: 80px;
+
+    .container {
+        justify-content: space-between;
+        height: 100%;
+
+        .logo {
+            padding: 1rem 0;
+            height: 100%;
+
+            img {
+                max-height: 100%;
+            }
+        }
+
+        ul {
+            list-style: none;
+            height: 100%;
+
+            li {
+                height: 100%;
+                margin-left: 1.5rem;
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                font-family: $custom_font;
+                border-bottom: 4px solid $light_theme;
+
+                //cursor: pointer;
+                &.active {
+                    color: $primary_theme;
+                    border-color: $primary_theme;
+                }
+
+                &:hover {
+                    color: $primary_theme;
+                    border-color: $primary_theme;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
+        }
+    }
+}
+
+.upper_footer {
+    background-image: url(../img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 0;
+    color: white;
+    height: 480px;
+    overflow: hidden;
+
+    .container {
+        //justify-content: space-between;
+        position: relative;
+        height: 100%;
+
+
+        h3 {
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+
+            li {
+                line-height: 1.2rem;
+                color: $secondary_font;
+                font-size: 0.8rem;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        img {
+            position: absolute;
+            top: 200px;
+            right: 0;
+            transform: translate(0, -50%);
+            opacity: 0.5;
+        }
+    }
+}
+
+.lower_footer {
+    background-color: $text_dark;
+    .container {
+      
+        .btn {
+          color: $light_theme;
+          border: 2px solid $primary_theme;
+          font-size: 0.8rem;
+        }
+      
+      
+        h5 {
+          color: $primary_theme;
+          margin-bottom: 0;
+        }
+        a {
+          img {
+            display: block;
+            max-width: 30px;
+          }
+        }
+      
+    }
+  }
