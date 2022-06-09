@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap);#comics_wrapper {
+  background-color: #1C1C1C;
+}
+#comics_wrapper .col .img_div {
+  aspect-ratio: 1;
+  position: relative;
+}
+#comics_wrapper .col .img_div:hover img {
+  filter: brightness(0.2);
+}
+#comics_wrapper .col .img_div:hover .price {
+  display: block;
+}
+#comics_wrapper .col .img_div img {
+  width: 100%;
+  cursor: pointer;
+}
+#comics_wrapper .col .img_div .price {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: none;
+}
+#comics_wrapper .col h6 {
+  font-size: 0.8rem;
+}

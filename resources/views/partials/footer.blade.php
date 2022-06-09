@@ -1,7 +1,7 @@
 <footer>
     <section class="upper_footer">
         <div class="container d-flex flex-column flex-wrap align-content-start">
-            {{-- <div class=""> --}} @foreach (config('db.footer_items') as $item)
+            {{-- <div class=""> --}} @foreach (config('layout_items.footer_items') as $item)
                 <div class="me-5"> {{-- v-for="(item, index) in footer_items" :key="index" --}}
                     <h5 class="text-uppercase">{{ $item['label'] }}</h5>
                     <ul>
@@ -31,7 +31,7 @@
                         </div>
                         
                         <div class="col d-flex align-items-center justify-content-center">
-                            @foreach (config('db.social_icons') as $item)
+                            @foreach (config('layout_items.social_icons') as $item)
                             <a href="#" class="px-1"><img src="{{ asset("$item") }}" /></a>
                             @endforeach
                         </div>

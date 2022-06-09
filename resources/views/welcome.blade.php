@@ -1,42 +1,30 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+{{-- @php
+    $myArray = config('db.comics');
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    dd($myArray);
+@endphp --}}
 
-    <title>Laravel</title>
+@section('custom-css')
+    <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
+@endsection
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
+@extends('layouts.app')
 
-    <!-- Styles -->
+@section('content')
+    <section id="comics_wrapper">
+        <div class="container py-5">
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3">
+                @foreach (config('db.comics') as $comic)
 
-</head>
-
-<body>
-    @extends('layouts.app')
-
-    @section('content')
-        <div class="flex-center position-ref full-height">
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                    <div class="col text-white">
+                        <div class="img_div mb-2 overflow-hidden">
+                            <img class="" src="{{ $comic['thumb'] }}" alt="">
+                            <span class="price">{{$comic['price']}}</span>
+                        </div>
+                        <h6 class="text-uppercase">{{ $comic['title'] }}</h6>
+                    </div>
+                @endforeach
             </div>
         </div>
-    @endsection
-</body>
-
-</html>
+    </section>
+@endsection

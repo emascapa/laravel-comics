@@ -5,7 +5,7 @@
         </div>
 
         <ul class="d-flex align-items-center">
-            @foreach (config('db.header_links') as $item => $link)
+            @foreach (config('layout_items.header_links') as $item => $link)
                 <li class="d-flex align-items-center">
                     <a href="{{ $link }}" class="">{{ $item }}</a>
                 </li>

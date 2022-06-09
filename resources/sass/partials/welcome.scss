@@ -1,0 +1,43 @@
+@import '../variables.scss';
+
+#comics_wrapper {
+    background-color: $bg_dark;
+
+    .col {
+
+
+        .img_div {
+            aspect-ratio: 1;
+            position: relative;
+
+            &:hover {
+                img {
+                    filter: brightness(0.2);
+                }
+
+                .price {
+                    display: block;
+                }
+            }
+
+            img {
+                width: 100%;
+                cursor: pointer;
+            }
+
+            .price {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 10;
+                display: none;
+            }
+        }
+
+        h6 {
+            font-size: 0.8rem;
+        }
+
+    }
+}
