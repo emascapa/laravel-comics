@@ -64,6 +64,13 @@ header {
     }
 }
 
+.jumbotron {
+    height: 350px;
+    background-image: url("../img/jumbotron.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 .upper_footer {
     background-image: url(../img/footer-bg.jpg);
     background-repeat: no-repeat;
