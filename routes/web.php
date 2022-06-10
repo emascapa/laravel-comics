@@ -33,10 +33,17 @@ Route::get('/comics', function () {
 
 Route::get("/comics/{id}", function ($id) {
 
-    $comic = config('db.comics')[$id];
+    $comics = config('db.comics');
 
+    if ($id >= 0 && is_numeric($id) && $id < count($comics)) {
 
-    return view('comics.show', compact('comic'));
+        $comic = $comics[$id];
+
+        return view('comics.show', compact('comic'));
+    } else {
+        abort(404);
+    }
+
 })->name('show-comics');
 
 
