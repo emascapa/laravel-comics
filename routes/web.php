@@ -33,9 +33,10 @@ Route::get('/comics', function () {
 
 Route::get("/comics/{id}", function ($id) {
 
-    
+    $comic = config('db.comics')[$id];
 
-    return view('comics.show');
+
+    return view('comics.show', compact('comic'));
 })->name('show-comics');
 
 

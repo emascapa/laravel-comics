@@ -1,3 +1,28 @@
-.custom {
-    background-color: red;
+@import '../variables.scss';
+
+.comic_banner {
+    height: 60px;
+    background-color: $primary_theme;
+}
+
+.comic_cover {
+    width: 140px;
+    position: absolute;
+    left: 0;
+    bottom: calc(100% + 10px);
+    border: 1px solid white;
+
+    .custom_label {
+        background-color: rgb(101, 186, 242);
+        color: white;
+        font-size: 0.8rem;
+    }
+}
+
+.fs_sm {
+    font-size: 0.7rem;
+}
+
+.bg-green {
+    background-color: rgb(67, 202, 83);
 }

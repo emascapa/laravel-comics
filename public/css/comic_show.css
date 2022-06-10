@@ -1,3 +1,25 @@
-.custom {
-  background-color: red;
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap);.comic_banner {
+  height: 60px;
+  background-color: #0C7CEC;
+}
+
+.comic_cover {
+  width: 140px;
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 10px);
+  border: 1px solid white;
+}
+.comic_cover .custom_label {
+  background-color: rgb(101, 186, 242);
+  color: white;
+  font-size: 0.8rem;
+}
+
+.fs_sm {
+  font-size: 0.7rem;
+}
+
+.bg-green {
+  background-color: rgb(67, 202, 83);
 }
