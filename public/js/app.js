@@ -19425,10 +19425,21 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/sass/partials/welcome.scss":
-/*!**********************************************!*\
-  !*** ./resources/sass/partials/welcome.scss ***!
-  \**********************************************/
+/***/ "./resources/sass/partials/comic_show.scss":
+/*!*************************************************!*\
+  !*** ./resources/sass/partials/comic_show.scss ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/partials/comics.scss":
+/*!*********************************************!*\
+  !*** ./resources/sass/partials/comics.scss ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -19437,15 +19448,16 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ }),
 
 /***/ 0:
-/*!****************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/partials/welcome.scss ***!
-  \****************************************************************************************************/
+/*!*********************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/partials/comics.scss ./resources/sass/partials/comic_show.scss ***!
+  \*********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\MAMP\htdocs\LARAVEL\laravel-comics\resources\js\app.js */"./resources/js/app.js");
 __webpack_require__(/*! C:\MAMP\htdocs\LARAVEL\laravel-comics\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! C:\MAMP\htdocs\LARAVEL\laravel-comics\resources\sass\partials\welcome.scss */"./resources/sass/partials/welcome.scss");
+__webpack_require__(/*! C:\MAMP\htdocs\LARAVEL\laravel-comics\resources\sass\partials\comics.scss */"./resources/sass/partials/comics.scss");
+module.exports = __webpack_require__(/*! C:\MAMP\htdocs\LARAVEL\laravel-comics\resources\sass\partials\comic_show.scss */"./resources/sass/partials/comic_show.scss");
 
 
 /***/ })

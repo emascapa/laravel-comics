@@ -22,10 +22,25 @@ Route::get('/characters', function () {
     return view('characters');
 })->name('characters');
 
+
+//COMICS PART
+
 Route::get('/comics', function () {
-    return view('comics');
+    return view('comics.index');
 })->name('comics');
 
+
+
+Route::get("/comics/{id}", function ($id) {
+
+    
+
+    return view('comics.show');
+})->name('show-comics');
+
+
+
+//END COMICS PART
 
 Route::get('/movie', function () {
     return view('movie');
