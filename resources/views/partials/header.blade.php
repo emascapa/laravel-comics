@@ -6,7 +6,7 @@
 
         <ul class="d-flex align-items-center">
             @foreach (config('layout_items.header_links') as $item)
-                <li class="d-flex align-items-center">
+                <li class="d-flex align-items-center {{ (Route::currentRouteName() === $item) ? 'active' : '' }}">
                     <a href="{{route("$item")}}" class="">{{ $item }}</a>
                 </li>
             @endforeach
