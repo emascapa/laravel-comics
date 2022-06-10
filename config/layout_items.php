@@ -2,16 +2,16 @@
 
 return [
     'header_links' => [
-        "characters" =>"#",
-        "comics" =>"#",
-        "movie" =>"#",
-        "tv" =>"#",
-        "games" =>"#",
-        "collectibles" =>"#",
-        "videos" =>"#",
-        "fans" =>"#",
-        "news" =>"#",
-        "shop" =>"#",
+        "characters",
+        "comics",
+        "movie",
+        "tv",
+        "games",
+        "collectibles",
+        "videos",
+        "fans",
+        "news",
+        "shop",
     ],
 
     'footer_items' => [

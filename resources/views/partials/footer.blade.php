@@ -18,15 +18,15 @@
     </section>
 
     <section class="lower_footer">
-        <div class="container p-3 text-center text-sm-start">
+        <div class="container p-3">
             <div class="row row-cols-1 row-cols-md-2 g-3">
-                <div class="col">
+                <div class="col text-center text-md-start">
                     <span class="btn text-uppercase text-white">sign-up now</span>
                 </div>
                 <div class="col ">{{-- d-flex align-items-center --}}
-                    <div class="row row-cols-1 row-cols-sm-2 g-3">
+                    <div class="row h-100 row-cols-1 row-cols-sm-2 g-3">
 
-                        <div class="col">
+                        <div class="col d-flex align-items-center justify-content-center">
                             <h5 class="text-uppercase">follow us</h5>
                         </div>
                         
